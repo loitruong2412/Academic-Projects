@@ -1,0 +1,27 @@
+load fox.jpg
+blur
+save fox-blur.png
+load fox.jpg
+sepia
+save fox-sepia.png
+load fox.jpg
+dither
+save fox-dither.png
+create rainbow 500 700 horizontal
+save horizontal-rainbow.png
+create checkerboard 30
+save checkerboard.png
+create flag 450 675 Greece
+save Greekflag.png
+create flag 640 640 Switzerland
+save Swissflag.png
+load fox.jpg
+filter 1/9,1/9,1/9;1/9,1/9,1/9;1/9,1/9,1/9
+save fox-box-blur.png
+load fox.jpg
+greyscale
+save fox-greyscale.png
+load fox.jpg
+mosaic 2500
+save fox-mosaic-2500.png
+q

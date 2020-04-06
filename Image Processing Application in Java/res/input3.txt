@@ -1,0 +1,19 @@
+create rainbow 38 38 vertical
+save vertRain.png
+load vertRain.png
+mosaic 150
+save rain-mosaic-150.png
+restore
+save vertRainRestore.png
+mosaic 1444
+save rain-mosaic-1444-Norm.png
+restore
+dither
+save rain-dither.png
+load dog.jpg
+mosaic 2500
+sharpen
+sharpen
+sharpen
+save dog-multiple.png
+quit

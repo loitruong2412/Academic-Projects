@@ -1,0 +1,26 @@
+load dog.jpg
+dither
+save dog-dither.png
+load dog.jpg
+dither
+restore
+sepia
+save dog-sepia.png
+create rainbow 500 700 vertical
+save vertical-rainbow.png
+create checkerboard 30
+save checkerboard.png
+create flag 400 600 France
+save frenchflag.png
+load dog.jpg
+filter 1/16,1/8,1/16;1/8,1/4,1/8;1/16,1/8,1/16
+save dog-filter.png
+load dog.jpg
+transform 0.2126,0.7152,0.0722;0.2126,0.7152,0.0722;0.2126,0.7152,0.0722
+save dog-transform.png
+load dog.jpg
+greyscale
+save dog-greyscale.png
+load dog.jpg
+mosaic 4000
+save dog-mosaic-4000.png
