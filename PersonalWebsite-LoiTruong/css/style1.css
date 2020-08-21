@@ -1,0 +1,73 @@
+/*
+General style 
+*/
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0 ;
+    background: url(/media/background1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
+    background-color: #001e38;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'DM Mono', monospace;
+}   
+
+.fullsize-box {
+    
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'DM Mono', monospace;
+    display: block;
+}
+
+
+
+/*
+Body box that is not full size
+*/
+.relative-box {
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: #0a162c;
+        transition: all ease-in-out 250ms;
+    }
+  
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        /* background: url(/media/background_resized.jpg) no-repeat; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; 
+        background-size: cover;
+        background-color: #0a162c;
+    }
+
+}

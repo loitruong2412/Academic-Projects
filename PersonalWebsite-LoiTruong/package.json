@@ -1,0 +1,13 @@
+{
+    "name": "personalwebsite",
+    "engines": {
+        "node": "*",
+        "npm": "*"
+    },
+    "scripts": {
+        "start": "http-server"
+    },
+    "dependencies": {
+        "http-server": "*"
+    }
+}

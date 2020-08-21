@@ -1,0 +1,198 @@
+/*
+Navigation bar 
+*/
+nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    font-family: 'Monda', sans-serif;
+    background-color: #001e38;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    margin-left: 1.5rem;
+    float: left;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links ul{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    list-style: none; 
+    position: relative;
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.nav-links ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.nav-links ul li.sub-menu:before { 
+    content: '\f0d7';
+    position: absolute;
+    font-family: fontAwesome;
+    line-height: 52px;
+    color: white;
+    right: 5px;
+}
+
+.nav-links ul li.active.sub-menu:before {
+    content: '\f0d8';
+}
+
+.nav-links ul li ul {
+    position: absolute;
+    left: 0;
+    background: rgb(15,76, 129); 
+    display: none;
+    border-radius: 4%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.nav-links ul li.active ul {
+    display: block;
+}
+
+.nav-links ul li ul li {
+    display: block;
+    width: 200px;   
+    border-radius: 5%;
+    margin: 0;
+}
+
+.nav-links ul li ul li a {
+    font-size: 12px;
+}
+
+.nav-links li:hover {
+    background-color: rgb(101, 141, 198);
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav {
+        padding: 0 20px;
+        height: fit-content;
+        background-color: rgba(15, 76, 129)
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        width: 100%; 
+        height: fit-content;
+        background: rgb(15, 76, 129);
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+    .nav-links ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+
+    .nav-links ul li.active ul {
+        position: relative;
+        background:  rgb(15, 76, 129);
+    }
+
+    .nav-links ul li ul {
+        border-radius: 0%;
+        margin: 0;
+    }
+
+    .nav-links ul li ul li {
+        width: 100%;
+    }
+
+    .nav-links.active ul li {
+        border-radius: 0%;
+        margin: 0;
+    }
+}

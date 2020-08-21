@@ -1,0 +1,71 @@
+/*
+Bio 
+*/
+
+.bio-box {
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    border: 2px solid white;
+    
+}
+
+.bio {
+    text-align: left;
+}
+
+.bio h1 {
+    font-size: 40px;
+}
+
+.bio p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.bio p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: rgba(15, 76, 129);
+    border-radius: 5%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bio table, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.bio table .question {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .bio h1 {
+        font-size: 6vw;
+    }
+    
+    .bio p {
+        font-size: 4vw;
+    }
+    .bio table, td {
+        font-size: 4vw;
+    }
+}
