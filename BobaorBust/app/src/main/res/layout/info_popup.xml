@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:background="@drawable/corner_bg">
+
+    <Button
+        android:id="@+id/closePopup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/close_btn" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oxygen_bold"
+            android:layout_gravity="center_horizontal"
+            android:text="How To Play"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/oxygen"
+        android:text="Tilt your phone left and right to catch the boba and avoid the germs. You only have 3 lives. Good Luck!"
+        android:textAlignment="center"
+        android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:text="@string/developers"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/oxygen"
+            android:text="@string/saimukeshvarma_bhupatiraju_n_tiffany_chen_n_deanna_dang_n_loi_truong_n_kristin_white"
+            android:textAlignment="center"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:text="@string/graphic_designer"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/oxygen"
+            android:text="@string/my_h_nguyen"
+            android:textAlignment="center"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

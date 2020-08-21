@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BobaOrBust</string>
+    <string name="action_settings">Settings</string>
+    <string name="view_scores">View Scores</string>
+    <string name="play">Play</string>
+    <string name="title_activity_view_scores">ViewScores</string>
+    <string name="title_activity_game_result">GameResult</string>
+    <string name="play_again">Play Again</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="view_high_scores">View High Scores</string>
+    <string name="high_scores"><u>High Scores:</u></string>
+    <string name="date"><u>Date:</u></string>
+    <string name="score"><u>Score:</u></string>
+    <string name="developers">Developers</string>
+    <string name="graphic_designer">Graphic Designer</string>
+    <string name="saimukeshvarma_bhupatiraju_n_tiffany_chen_n_deanna_dang_n_loi_truong_n_kristin_white">Saimukeshvarma Bhupatiraju \n Tiffany Chen \n Deanna Dang \n Loi Truong \n Kristin White</string>
+    <string name="my_h_nguyen">My H Nguyen</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="reset_high_scores">Reset High Scores</string>
+    <string name="reset_all_statistics">Reset All Statistics</string>
+    <string name="games_played">Games Played</string>
+    <string name="time_played">Time Played</string>
+    <string name="textview">TextView</string>
+    <string name="sound">Sound</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="view_top_scores">View Top Scores</string>
+</resources>

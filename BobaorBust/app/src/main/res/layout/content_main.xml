@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homescreen" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/volumeCtrl"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/volume_on" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="199dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="140dp"
+        android:background="@drawable/play_text"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/playButton"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/playButton">
+
+        <Button
+            android:id="@+id/viewScoreButton"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_scores"
+            android:onClick="openHighScores"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="523dp" />
+
+        <Button
+            android:id="@+id/changeSettingsButton"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/settings"
+            android:onClick="openSettings"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="587dp" />
+
+        <Button
+            android:id="@+id/viewInfoButton"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/info"
+            android:onClick="viewInfo"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="651dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
