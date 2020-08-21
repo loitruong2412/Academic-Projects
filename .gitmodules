@@ -1,0 +1,9 @@
+[submodule "BobaorBust"]
+	path = BobaorBust
+	url = https://github.ccs.neu.edu/loitruong2412/BobaOrBust
+[submodule "PersonalWebsite-LoiTruong"]
+	path = PersonalWebsite-LoiTruong
+	url = https://github.ccs.neu.edu/loitruong2412/PersonalWebsite-LoiTruong
+[submodule "Spendwise"]
+	path = Spendwise
+	url = https://github.ccs.neu.edu/loitruong2412/GroupProject_LocalHosts
